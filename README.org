@@ -1,0 +1,6 @@
+#+TITLE: Jselect
+* What Is It?
+Jselect is a generic wrapper for making intelligent querys about data contained
+in a JSON object parsed from Medea (or something similar).
+* Example
+For example, imagine a data structure
