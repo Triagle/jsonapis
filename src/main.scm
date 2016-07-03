@@ -17,7 +17,6 @@
 ")
     (exit))))
 (define (print-table rows)
-  ;; (fmt-let 'string-width unicode-string-width (apply-cat (fmt #t (dsp "test"))))
   (let ((rows (cons '((artistName . "Artist") (collectionName . "Album") (trackName . "Title")) rows)))
     (fmt #t (fmt-unicode (tabular
                           "| "
@@ -44,7 +43,5 @@
      (lambda (o n x vals)
        (error "unrecognized option" n) )
      cons
-     '())))
-  ;; (jselect '(trackName) (itunes-results (itunes-query (car args))))
-  )
+     '()))))
 (run)
